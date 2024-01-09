@@ -1,0 +1,53 @@
+.badge-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+    background-image: radial-gradient(circle at center, #899Dc4, #495D84);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);
+    font-weight: 300;
+  }
+  
+  .all {
+    display: flex;
+    perspective: 10px;
+    transform: perspective(300px) rotateX(20deg);
+    will-change: perspective;
+    perspective-origin: center center;
+    transition: all 1.3s ease-out;
+    justify-content: center;
+    transform-style: preserve-3d;
+  }
+  
+  .all:hover {
+    perspective: 1000px;
+    transition: all 1.3s ease-in;
+    transform: perspective(10000px) rotateX(0deg);
+  }
+  
+  .all:hover .text {
+    opacity: 1;
+  }
+  
+  .all > div {
+    opacity: 0;
+    transition-delay: 0.3s; /* Added delay for a smoother transition */
+  }
+  
+  .all:hover > div {
+    opacity: 1;
+  }
+  
+  .all:hover .explainer {
+    opacity: 0;
+  }
+  
