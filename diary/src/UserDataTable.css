@@ -1,0 +1,66 @@
+.user-data-table-container {
+    margin: 20px;
+    background-color: #fefefe;
+    width: 80vw;
+    padding: 5%;
+    color: black !important;
+  }
+  
+  .user-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .user-data-table th,
+  .user-data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .user-data-table th {
+    background-color: #f2f2f2;
+    color: black;
+  }
+  
+  .print-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+
+  .imagelogo{
+    width: 500px;
+  }
+
+  .tableHeading2{
+    text-align: center;
+  }
+
+  .teacherInfoSections {
+    display: flex;
+    padding: 5%;
+  }
+  
+  .teacherInfoSection1,
+  .teacherInfoSection2 {
+    flex: 2; /* Equal width for both sections */
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+
+  .teacherInfoSection2 {
+    margin-left: 200px; /* Adjust the margin as needed */
+  }
+  
+  .dataLable {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* Add any additional styling for dataLable if needed */
+  }
+
+  

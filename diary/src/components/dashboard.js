@@ -4,8 +4,12 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
+import '../Button.css'
+
+
 const Dashboard = () => {
   const [userName, setUserName] = useState('');
+  const [name, setName] = useState('')
   const navigate = useNavigate();
 
 
@@ -13,12 +17,10 @@ const Dashboard = () => {
     // Assume you have a server endpoint to fetch user information based on the session or token
     const fetchUserInfo = async () => {
       try {
-       
         const response = await axios.get('http://localhost:3001/userinfo', { withCredentials: true });
-        
         if (response.data.success) {
-            
-          setUserName(response.data.name);
+          setName(response.data.data[0].name)
+          setUserName(response.data.data[0].username);
         } else {
           console.error('Error fetching user information:', response.data.message);
         }
@@ -35,16 +37,21 @@ const Dashboard = () => {
     navigate('/login');
   }
 
-  const userId = document.cookie
+  console.log(userName)
 
-console.log(`User ID from Cookie: ${userId}`);
+  function gotopage(url) {
+    window.location.href = url;
+  }
 
   return (
     <div>
-      <h1>Welcome to the Dashboard, {userName}!</h1>
+      <h1>Welcome to the Dashboard, {name}!</h1>
       {/* Other dashboard content goes here */}
-      <button onClick={() => handleLogout()}>logout</button>
-
+      <button className='logout_button' onClick={() => handleLogout()}>logout</button>
+      <div className='button_body'>
+        <button id='new-entry' className='dashbuttons' onClick={() => { gotopage(`/newform/${userName}`) }}>New Entry</button>
+        <button id='old-entry' className='dashbuttons' onClick={() => { gotopage(`/oldentries/${userName}`) }}>Old Entry</button>
+      </div>
     </div>
   );
 };

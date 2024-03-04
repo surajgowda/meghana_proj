@@ -1,4 +1,3 @@
-// src/components/LoginForm.js
 
 import React, { useState } from 'react';
 import axios from 'axios';
@@ -21,10 +20,8 @@ const LoginForm = () => {
         { username, password },
         { withCredentials: true }
         );
-
-
       if (response.data.success) {
-        navigate(`/dashboard/${response.data.userId}`);
+        navigate(`/check`);
       } else {
         console.error('Login failed:', response.data.message);
       }

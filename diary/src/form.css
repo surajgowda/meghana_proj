@@ -1,0 +1,66 @@
+/* ScheduleForm.css */
+
+.schedule-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #45a049;
+  height: 100vh;
+  
+}
+
+option{
+  color:#000;
+}
+
+.schedule-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 100%;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.schedule-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #000;
+}
+
+.schedule-form select,
+.schedule-form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black;
+  box-sizing: border-box;
+}
+
+.schedule-form button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.schedule-form button:hover {
+  background-color: #45a049;
+}
+
+/* Basic fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
