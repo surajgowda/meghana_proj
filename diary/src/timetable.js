@@ -19,13 +19,13 @@ const GlassmorphismButton = () => {
               <a href="documentviewer">First Semester</a>
             </div>
             <div className="btn">
-              <a href="#">Second Semester</a>
+              <a href="documentviewer">Second Semester</a>
             </div>
             <div className="btn">
-              <a href="#">Third Semester</a>
+              <a href="documentviewer">Third Semester</a>
             </div>
             <div className="btn">
-              <a href="#">Fourth Semester</a>
+              <a href="documentviewer">Fourth Semester</a>
             </div>
           </div>
         </body>

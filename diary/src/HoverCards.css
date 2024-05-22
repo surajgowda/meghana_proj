@@ -83,10 +83,7 @@
   text-shadow: 0 0 5px rgba(100, 100, 255, .6);
 }
 
-.lefter {
-  transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
-  background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/organization-512.png);
-}
+
 
 .left {
   transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
@@ -98,10 +95,6 @@
   background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/app_window-512.png);
 }
 
-.right {
-  transform: translateX(30px) translateZ(-25px) rotateY(5deg);
-  background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/cloud_weather-512.png);
-}
 
 .righter {
   transform: translateX(60px) translateZ(-50px) rotateY(10deg);
